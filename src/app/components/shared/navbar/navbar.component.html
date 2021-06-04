@@ -1,88 +1,81 @@
- <!-- <nav>
-	
-	
-	<a  [routerLink]="['home']">Inicio</a>
-	
-	<a  [routerLink]="['aboute-me']">Sobre mí</a>
-
-	<a  [routerLink]="['proyects']">Proyectos</a>
-
-	<a  [routerLink]="['experence']">Experiencia</a>
-
-	<a [routerLink]="['contact']">Contacto</a>
-	
-	
-	<div class="animation start-home"></div>
-
- </nav>  -->
-
-
- <nav class="navbar navbar-expand-lg">
+     <!-- <nav class="navbar navbar-expand-lg">
 	<div class="container-fluid">
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="icon ion-md-menu"></i>
 	  </button>
 	  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+		<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
 		  <li class="nav-item" RouterLinkActive="active">
-			<a class="nav-link" aria-current="page" [routerLink]="['home']">Inicio</a>
+			<a class="nav-link" aria-current="page" [routerLink]="['home']" id="home">Inicio</a>
 		  </li>
 		  <li class="nav-item" RouterLinkActive="active">
-			<a class="nav-link" aria-current="page" [routerLink]="['aboute']">Sobre mí</a>
+			<a class="nav-link" aria-current="page" [routerLink]="['aboute']" id="about">Sobre mí</a>
 		  </li>
 		  <li class="nav-item" RouterLinkActive="active">
-			<a class="nav-link " aria-current="page" [routerLink]="['experence']">Experiencia</a>
+			<a class="nav-link " aria-current="page" [routerLink]="['experence']" id="experence">Experiencia</a>
 		  </li>
 		  <li class="nav-item" RouterLinkActive="active">
-			<a class="nav-link" aria-current="page" [routerLink]="['proyects']">Proyectos</a>
+			<a class="nav-link" aria-current="page" [routerLink]="['proyects']" id="proyects">Proyectos</a>
 		  </li>
 		  <li class="nav-item" RouterLinkActive="active">
-			<a class="nav-link" aria-current="page" [routerLink]="['contact']">Contacto</a>
+			<a class="nav-link" aria-current="page" [routerLink]="['contact']" id="contact">Contacto</a>
 		  </li>
-		  <!-- <div class="animation start-home"></div> -->
+		  <div class="animation start-home"></div>
 		</ul>
 	  </div>
 	</div>
-  </nav>
+  </nav>     -->
 
 
+  
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="nav-bar">
+                <div class="nav-button" routerLinkActive="active" [routerLink]="['home']">
+                    <a mat-icon-button id="home-icon" aria-label="Inicio">
+						<img  class="img1" src="/assets/img/home.png"></a>
+                    <p>
+                        <span class="d-none d-md-block">Inicio</span>
+                    </p>
+                </div>
+                <div class="nav-button" routerLinkActive="active" [routerLink]="['aboute']">
+                    <a mat-icon-button id="about-icon" aria-label="Example icon button with a home icon">
+					<img class="img2" src="/assets/img/user.png">
+                    </a>
+                    <p>
+                        <span class="d-none d-md-block">Sobre mi</span>
+                    </p>
+                </div>
+                <div class="nav-button" routerLinkActive="active" [routerLink]="['experence']">
+                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
+						<img class="img3" src="/assets/img/estrella.png">                    
+					</a>
+                    <p>
+                        <span class="d-none d-md-block">Experiencia</span>
+                    </p>
+                </div>
+                <div class="nav-button" routerLinkActive="active" [routerLink]="['proyects']">
+                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
+						<img class="img4" src="/assets/img/maletin.png"> 
+                   </a>
+                    <p>
+                        <span class="d-none d-md-block">Proyectos</span>
+                    </p>
+                </div>
+                <div class="nav-button" routerLinkActive="active" [routerLink]="['contact']">
+                    <a mat-icon-button id="contact-icon" aria-label="Example icon button with a home icon">
+						<img class="img5" src="/assets/img/email.png">
+					</a>
+                    <p>
+                        <span class="d-none d-md-block">Contacto</span>
+                    </p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+	

@@ -35,4 +35,10 @@
 }
  */
 
- 
+html, body { height: 100%;
+             margin: 0 }
+body { 
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: #057B7C ;
+}
+
