@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "DantePileckas.github.io:build:production"
+              "browserTarget": "dantePileckas:build:production"
             },
             "development": {
-              "browserTarget": "DantePileckas.github.io:build:development"
+              "browserTarget": "dantePileckas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DantePileckas.github.io:build"
+            "browserTarget": "dantePileckas:build"
           }
         },
         "test": {
@@ -108,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "DantePileckas.github.io"
+  "defaultProject": "dantePileckas"
 }
