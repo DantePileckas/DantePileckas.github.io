@@ -35,10 +35,12 @@
 }
  */
 
-html, body { height: 100%;
-             margin: 0 }
+ html, body { height: 100%; }
+
 body { 
-    /* font-family: 'Montserrat', sans-serif; */
+    margin: 0;
     background-color: #057B7C ;
+    font-family:'Times New Roman', Times, serif;
 }
+
 

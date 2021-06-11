@@ -1,46 +1,76 @@
-<div class="contenedor">
-    <div class="row">
+<div class="portfolio">
+<div class="container">
+  
+  <!-- Encabezado -->
+  <div class="row">
+    <div class="col-12 text-center">
+     <h1>
+     Portafolio
+    </h1>
+    <p>Proyectos desarrollados con fines educativos o de ocio a través de nuevas tecnologías</p>
+    </div>
+  </div>
+  
 
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptates dolor reprehenderit autem consequuntur natus commodi ducimus dolorum, ipsum accusantium accusamus dicta eveniet quas, ullam quidem. Rem repellat blanditiis incidunt?</p>
-                  <a href="#" class="btn btn-primary">Visitar</a>
-                </div>
-              </div>
-        </div>
+<br>
+  <!-- proyectos -->
+  
+  <div class="row">
+      <!-- SpotiApp -->
+
+     
+          <mat-card class="card mx-auto my-2">
+            <mat-card-header>
+              <mat-card-title>SpotiApp</mat-card-title>
+              </mat-card-header>
+
+                <img mat-card-image src="/assets/img/spotiApp.jpg">
+
+                <mat-card-content>                  
+                  <p class="card-text">
+                    Aplicación que consume el api de spotify, para conocer nuevos lanzamientos y artistas
+                  </p>
+                  <small>Tecnologías aplicadas</small><br>
+                  <span class="badge bg-primary mx-1" >TypeScript</span>
+                  <span class="badge bg-success  mx-1">Angular</span>
+                  <span class="badge bg-success  mx-1">Boostrap</span>
+                </mat-card-content>
+                <mat-card-actions class="actions">
+                <button type="button" (click)="goToUrlSpoti()" class="btn btn-link" target="blank">Visitar</button>
+                </mat-card-actions>
+               </mat-card>
 
 
 
 
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas blanditiis iure deserunt! Aspernatur rem, ipsum architecto facere possimus quas minus animi voluptatum quae eveniet officia tempore accusamus recusandae voluptas ipsam!</p>
-              <a href="#" class="btn btn-primary">Visitar</a>
-            </div>
-          </div>
-        </div>
+
+        <!-- El Pueblito, tu tienda -->
+
+          <mat-card class="card mx-auto my-2">
+            <mat-card-header>
+              <mat-card-title>El Pueblito</mat-card-title>
+            </mat-card-header>
+            
+            <img mat-card-image src="/assets/img/Pueblito.jpg">
+
+            <mat-card-content>                 
+              <p class="card-text"> Ecommerce de una tienda saludable, con análisis de usuario y desarrollo en Wordpress</p>
+            <small>Técnicas y herramientas aplicadas</small><br>
+            <span class="badge bg-primary mx-1" >Wordpress</span>
+            <span class="badge bg-success  mx-1">Benchmark</span>
+            <span class="badge bg-success  mx-1">Polls</span>
+            <span class="badge bg-success  mx-1">proto-people</span>
+            <span class="badge bg-success  mx-1">AI</span>
+            <span class="badge bg-success  mx-1">Usability test</span>
+          </mat-card-content> 
+            <mat-card-actions class="actions">
+              <button type="button" (click)="goToUrlTienda()" class="btn btn-link" target="blank">Visitar</button>
+            </mat-card-actions>
+            </mat-card>
 
 
 
-
-
-
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a minima, accusantium at omnis quos? A odit nostrum excepturi quis blanditiis temporibus, eos quasi! Ullam, illo quae? Sint, porro. Eveniet.</p>
-              <a href="#" class="btn btn-primary">Visitar</a>
-            </div>
-          </div>
-        </div>
 
     </div>
-</div>
+    </div>
+    </div>
