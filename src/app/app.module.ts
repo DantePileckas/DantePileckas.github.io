@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatCardModule} from '@angular/material/card';
-
-
-
-
+import {MatIconModule} from '@angular/material/icon';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -14,6 +11,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { APP_ROUTING } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BirthDayPipe } from 'src/pipes/brithday';
+
 
 @NgModule({
   declarations: [
@@ -24,12 +23,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProyectsComponent,
     ContactComponent,
     NavbarComponent,
+    BirthDayPipe
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
    
   ],
   providers: [],
