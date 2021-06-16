@@ -12,4 +12,19 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Linkedin(){
+    window.location.href='https://www.linkedin.com/in/dante-pileckas-4b503b210/';
+  }
+  Behance(){
+    window.location.href='https://www.behance.net/dantepileckas';
+  }
+  Wpp(){
+    window.location.href='https://wa.link/q8w2h0';
+  }
+  Git(){
+    window.location.href='https://github.com/DantePileckas';
+  }
+  
+
+
 }
