@@ -11,7 +11,15 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { APP_ROUTING } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//pipe
 import { BirthDayPipe } from 'src/pipes/brithday';
+
+//Servicios
+import {EducationService} from './services/EducationService'
+import { CertificationService } from './services/CertificationService';
+import { ExperenceService } from './services/ExperenceService';
+
 
 
 @NgModule({
@@ -33,7 +41,11 @@ import { BirthDayPipe } from 'src/pipes/brithday';
     MatIconModule
    
   ],
-  providers: [],
+  providers: [
+    EducationService,
+    CertificationService,
+    ExperenceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
