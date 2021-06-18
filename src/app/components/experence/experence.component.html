@@ -1,110 +1,238 @@
 <div class="container">
+  <!-- estudios -->
+  <h1>Educación</h1>
+  <div class="row">
+    <mat-card class="card mx-auto my-2"  *ngFor="let education of education ; let i=index">
+      <mat-card-header>
+        <mat-card-title>{{education.name}}</mat-card-title>
+        </mat-card-header>
+          <mat-card-content>                  
+            <p class="card-text">
+              <img [src]="education.img" alt="education.logo">  {{education.institute}}
+            </p>
+            <p class="card-text">
+            {{education.description}}
+            </p>
+            <p class="card-text">
+              <small class="text-muted">
+              {{education.date}}
+            </small>
+            </p>
+          </mat-card-content>
+          <!-- <mat-card-actions class="actions">
+          <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
+          </mat-card-actions> -->
+    </mat-card>
+  </div>
+  <br>
+  <br>
+  <!-- Certificaciones -->
+  <h1>Licencias y Certificaciones</h1>
+  <div class="row">
+    <!-- <div class="animated fadeIn fast"> -->
+    <mat-card class="card mx-auto my-2"  *ngFor="let certification of certification ; let i=index">
+      <mat-card-header>
+        <mat-card-title>{{certification.name}}</mat-card-title>
+        </mat-card-header>
+          <mat-card-content>                  
+            <p class="card-text">
+              <img [src]="certification.img" alt="certification.logo">{{certification.institute}}
+            </p>
   
-      <!-- estudios -->
-      <h1>Educación</h1>
-      <div class="row">
-      <!-- <div class="animated fadeIn fast"> -->
-      <mat-card class="card mx-auto my-2"  *ngFor="let education of education ; let i=index">
-        <mat-card-header>
-          <mat-card-title>{{education.name}}</mat-card-title>
-          </mat-card-header>
-            <mat-card-content>                  
-              <p class="card-text">
-                <img [src]="education.img" alt="education.logo">  {{education.institute}}
-              </p>
-              <p class="card-text">
-              {{education.description}}
-              </p>
-              <p class="card-text">
-                <small class="text-muted">
-                {{education.date}}
-              </small>
-              </p>
-            </mat-card-content>
-            <!-- <mat-card-actions class="actions">
-            <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
-            </mat-card-actions> -->
-           </mat-card>
+            <p class="card-text">
+              <small class="text-muted">
+              {{certification.date}}
+            </small>
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="actions">
+          <a [href]=certification.link target="blank">Ver credencial</a>
+          </mat-card-actions>
+          </mat-card>
 
-          </div>
-        <!-- </div> -->
- 
-        <br>
-        <br>
-
-       <!-- Certificaciones -->
-      <h1>Licencias y Certificaciones</h1>
-      <div class="row">
-        <!-- <div class="animated fadeIn fast"> -->
-        <mat-card class="card mx-auto my-2"  *ngFor="let certification of certification ; let i=index">
-          <mat-card-header>
-            <mat-card-title>{{certification.name}}</mat-card-title>
-            </mat-card-header>
-              <mat-card-content>                  
-                <p class="card-text">
-                  <img [src]="certification.img" alt="certification.logo">{{certification.institute}}
-                </p>
-      
-                <p class="card-text">
-                  <small class="text-muted">
-                  {{certification.date}}
-                </small>
-                </p>
-              </mat-card-content>
-              <mat-card-actions class="actions">
-              <a [href]=certification.link target="blank">Ver credencial</a>
-              </mat-card-actions>
-             </mat-card>
-  
-            </div>
-          <!-- </div> -->
-
-
-        <br>
-        <br>
-
-
+  </div>
+  <br>
+  <br>
   <!-- Experiencias -->
-      <h1>Experiencias</h1>
-      <div class="row">
-        <!-- <div class="animated fadeIn fast"> -->
-        <mat-card class="card mx-auto my-2"  *ngFor="let experence of experence ; let i=index">
-          <mat-card-header>
-            <mat-card-title>{{experence.name}}</mat-card-title>
-            </mat-card-header>
-              <mat-card-content>                  
-                <p class="card-text">
-               <img [src]="experence.img" alt="experence.logo">{{experence.institute}}
-                </p>
-                <p class="card-text">
-                  {{experence.description}}
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">
-                  {{experence.date}}
-                </small>
-                </p>
-              </mat-card-content>
-              <!-- <mat-card-actions class="actions">
-              <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
-              </mat-card-actions> -->
-             </mat-card>
-  
+  <h1>Experiencias</h1>
+  <div class="row">
+    <!-- <div class="animated fadeIn fast"> -->
+    <mat-card class="card mx-auto my-2"  *ngFor="let experence of experence ; let i=index">
+      <mat-card-header>
+        <mat-card-title>{{experence.name}}</mat-card-title>
+        </mat-card-header>
+          <mat-card-content>                  
+            <p class="card-text">
+            <img [src]="experence.img" alt="experence.logo">{{experence.institute}}
+            </p>
+            <p class="card-text">
+              {{experence.description}}
+            </p>
+            <p class="card-text">
+              <small class="text-muted">
+              {{experence.date}}
+            </small>
+            </p>
+          </mat-card-content>
+          <!-- <mat-card-actions class="actions">
+          <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
+          </mat-card-actions> -->
+          </mat-card>
+
+  </div>
+
+  <br>
+  <br>
+  <!-- skills tecnicos -->
+  <h1>Technical skills</h1>
+
+  <div class="space">
+    <div class="row">
+
+        <!-- JavaScript frameworks and libraries -->
+       <div class="card text-white mb-3" style="max-width: 18rem;">
+         <div class="header">JavaScript Frameworks and libraries</div>
+          <div class="card-body">
+            <div class="col-md-4">
+                <img  src="assets/img/logos/angular.png" alt="angular" width="50">
+                <p>Angular</p>
             </div>
-          <!-- </div> -->
+         
+            <div class="col-md-4">
+              <img src="assets/img/logos/typescript.png" alt="type" width="50">
+              <p>typescript</p>
+            </div>
+          
+          <div class="col-md-4">
+            <img  src="assets/img/logos/angular_material.png" alt="angular" width="50">
+            <p>Angular Material</p>
+          </div>
+          
+        </div>
+      </div>
 
+        <!-- Diseño -->
+      <div class="card text-white mb-3" style="max-width: 18rem;">
+        <div class="header">Html - css</div>
+        <div class="card-body">
+           
+          <div class="col-md-4">
+              <img  src="assets/img/logos/html.png" alt="angular" width="50">
+              <p>Html</p>
+          </div> 
+          
+          <div class="col-md-4">
+            <img  src="assets/img/logos/css.png" alt="type" width="50">
+            <p>Css</p>
+          </div>
 
+          <div class="col-md-4">
+            <img  src="assets/img/logos/boostrap.png" alt="angular" width="50">
+            <p>Boostrap</p>
+          </div>
+      
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Prototipo -->
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="header">Prototyping</div>
+        <div class="card-body">
+          <div class="col-md-4">
+              <img target="blank" src="assets/img/logos/figma.png" alt="angular" width="50">
+              <p>Figma</p>
+          </div>
+         
+          <div class="col-md-4">
+            <img target="blank" src="assets/img/logos/invision.png" alt="angular" width="50">
+            <p>Invision</p>
+          </div>
+         
+          <div class="col-md-4">
+            <img target="blank" src="assets/img/logos/marvel.png" alt="angular" width="50">
+            <p>Marvel</p>
+          </div>
 
         </div>
+      </div>
+              
+        <!-- Adobe -->
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="header">Adobe</div>
+        <div class="card-body">
+          
+          <div class="col-md-4">
+            <img target="blank" src="assets/img/logos/ilustrator.png" alt="angular" width="50">
+            <p>Adobe Ilustrator</p>
+          </div>
+
+          <div class="col-md-4">
+           <img target="blank" src="assets/img/logos/photoshop.png" alt="angular" width="50">
+           <p>Adobe Photoshop</p>
+          </div>
+
+          <div class="col-md-4">
+           <img target="blank" src="assets/img/logos/xd.png" alt="angular" width="50">
+           <p>Adobe XD</p>
+          </div>
+        
+        </div>
+      </div>
+      
+        <!-- Research -->
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="header">Research</div>
+        <div class="card-body">
+         
+          <div class="col-md-4">
+            <img target="blank" src="assets/img/logos/miro.png" alt="angular" width="50">
+            <p>Miro</p>
+           </div>
+
+           <div class="col-md-4">
+              <img target="blank" src="assets/img/logos/google_forms.jpg" alt="angular" width="50">   
+              <p>Google Forms</p>
+           </div>  
+
+          <div class="col-md-4">
+              <img target="blank" src="assets/img/logos/typefrom.png" alt="angular" width="50">     
+              <p>Typefrom</p>
+          </div>
+
+            </div>
+      </div>
+
+        <!-- Testyng -->
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="header">Testyng</div>
+        <div class="card-body">
+          <div class="col-md-4">
+            <img target="blank" src="assets/img/logos/ow.png" alt="angular" width="50">
+            <p>Optimal Workshop</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Others -->
+      <div class="card text-white mb-3" style="max-width: 18rem;">
+        <div class="header">Others</div>
+          <div class="card-body">
+            <div class="col-md-4">
+              <img target="blank" src="assets/img/logos/wordpress.jpg" alt="angular" width="50">
+              <p>Wordpress</p>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="col-md-4">
+               <img target="blank" src="assets/img/logos/git.png" alt="angular" width="50">            </div>
+                <p>Git</p>
+              </div>  
+            </div>
+      </div>
+
+    </div>      
+   
+    </div>
+  </div>
+
+

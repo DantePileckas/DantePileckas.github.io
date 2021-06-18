@@ -28,7 +28,50 @@ max-width: 300px;
 border-radius:15px;
 display: flex;
 justify-content: center;
+}
 
-  }
 
-  
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.space .card{
+border-radius:15px;
+display: flex;
+justify-content: center;
+text-align: center;
+background-color: rgb(144, 61, 221);
+}
+
+.space p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.space img{
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.space img:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+}
+
+.space .row{
+    justify-content: space-around;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+.space p{
+    font-size: 14px;
+}
