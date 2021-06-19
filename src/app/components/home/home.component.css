@@ -27,7 +27,6 @@
             .info h5{
                 width: 103px;
                 height: 37px;
-                /* left: 61px; */
                 top: 241px;                
                 font-family: Times New Roman;
                 font-style: normal;
@@ -84,7 +83,7 @@
                 }
             }
 
-             /* @media (max-width: 600px) {
+             @media (max-width: 600px) {
                 .info {
                     text-align: center;
                     padding-bottom: 30px;
@@ -95,4 +94,4 @@
                 .info h3{
                     font-size: 1.5rem;
                 }
-            }  */
+            } 
