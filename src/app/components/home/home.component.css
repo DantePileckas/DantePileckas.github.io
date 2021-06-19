@@ -1,4 +1,6 @@
-.container{
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* .container{
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -13,10 +15,13 @@
 
 
             .round-pic{
+                display: flex;
+                justify-content: center;
                 text-align: center;
             }
 
             .round-pic img{
+                display: flex;
                 border-radius: 250px;
                 width:450px; 
                 height: 440px;                
@@ -42,7 +47,6 @@
                 width: 359px;
                 height: 69px;
                 top: 278px;
-
                 font-family: "Times New Roman";
                 font-style: normal;
                 font-weight: normal;
@@ -53,22 +57,22 @@
             }
 
             .info h3{
-                 width: 415px;
+                width: 415px;
                 height: 29px;
-                /* top:363px;  */
                 font-family: "Times New Roman";
-                /* font-style: normal;
-                font-weight: normal; */
-                /* line-height: 29px;  */
                 color: #000;
                 font-size: 1.1em;
                 color: #fff;   
+                display: flex;
+                justify-content: center;
                 position: relative;
                 float: left;
             }
 
             h3 span {
                 position: absolute;               
+                display: flex;
+                justify-content: center;
                 right:0;
                 width:0;
                 background: #057B7C ;
@@ -94,4 +98,40 @@
                 .info h3{
                     font-size: 1.5rem;
                 }
-            } 
+            }  */
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 70px;
+}  
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h5, h1, h3{
+    display: flex;
+    justify-content:center;
+    color: #FFFFFF;  
+    text-shadow: 2px 2px 4px #000000;    
+}
+
+h3{
+    text-align: center;
+}
+
+img{
+    /* width: 100%; */
+    /* margin: auto; */
+    display: flex;
+    border-radius: 100%;               
+    box-shadow: 3px 3px 3px #90ddc4, -3px -3px 3px #fafafa;
+}
+
+
+  
