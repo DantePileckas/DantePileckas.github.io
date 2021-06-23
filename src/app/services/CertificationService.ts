@@ -12,7 +12,7 @@ private certification:Certification[]=
     institute:"Educación IT",
     date:"Mayo 2021 - Junio 2021",
     img:"assets/img/it.png",
-    link:"" 
+    link:"https://api.alumni.education/course/certificate/generate?hash=8a98d960-8da2-40a2-8b21-8278d37a5da1&format=pdf&download=1" 
     },
 
     {
