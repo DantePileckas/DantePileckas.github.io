@@ -16,6 +16,9 @@ export class ProyectsComponent implements OnInit {
   goToUrlTienda(){
     window.location.href='http://elpueblitotienda.com.ar/';
 }
+  goToUrlVeterinaria(){
+    window.location.href='https://dantepileckas.github.io/citasReact/';
+  }
 
 
   ngOnInit(): void {

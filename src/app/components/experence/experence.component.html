@@ -1,6 +1,6 @@
 <div class="container">
   <!-- estudios -->
-  <h1>Educación</h1>
+  <h1>Education</h1>
   <div class="row">
     <mat-card class="card mx-auto my-2"  *ngFor="let education of education ; let i=index">
       <mat-card-header>
@@ -27,7 +27,7 @@
   <br>
   <br>
   <!-- Certificaciones -->
-  <h1>Licencias y Certificaciones</h1>
+  <h1>Licenses and Certifications</h1>
   <div class="row">
     <!-- <div class="animated fadeIn fast"> -->
     <mat-card class="card mx-auto my-2"  *ngFor="let certification of certification ; let i=index">
@@ -54,7 +54,7 @@
   <br>
   <br>
   <!-- Experiencias -->
-  <h1>Experiencias</h1>
+  <h1>Experiences</h1>
   <div class="row">
     <!-- <div class="animated fadeIn fast"> -->
     <mat-card class="card mx-auto my-2"  *ngFor="let experence of experence ; let i=index">
@@ -89,10 +89,28 @@
   <div class="space">
     <div class="row">
 
+        <!-- Java -->
+        <div class="card text-white  mb-3" style="max-width: 18rem;">
+          <div class="header">Java</div>
+          <div class="card-body">
+            <div class="col-md-4">
+              <img target="blank" src="assets/img/logos/java.png" alt="java" width="50">
+              <p>Java v8</p>
+            </div>
+          </div>
+        </div>
+
+
         <!-- JavaScript frameworks and libraries -->
        <div class="card text-white mb-3" style="max-width: 18rem;">
          <div class="header">JavaScript Frameworks and libraries</div>
           <div class="card-body">
+           
+            <div class="col-md-4">
+              <img  src="assets/img/logos/javas.png" alt="JavaScript" width="50">
+              <p>JavaScript</p>
+            </div>
+
             <div class="col-md-4">
                 <img  src="assets/img/logos/angular.png" alt="angular" width="50">
                 <p>Angular</p>
@@ -202,31 +220,28 @@
             </div>
       </div>
 
-        <!-- Testyng -->
-      <div class="card text-white  mb-3" style="max-width: 18rem;">
-        <div class="header">Testyng</div>
-        <div class="card-body">
-          <div class="col-md-4">
-            <img target="blank" src="assets/img/logos/ow.png" alt="angular" width="50">
-            <p>Optimal Workshop</p>
-          </div>
-        </div>
-      </div>
-
         <!-- Others -->
       <div class="card text-white mb-3" style="max-width: 18rem;">
         <div class="header">Others</div>
           <div class="card-body">
+            
             <div class="col-md-4">
               <img target="blank" src="assets/img/logos/wordpress.jpg" alt="angular" width="50">
               <p>Wordpress</p>
             </div>
             
             <div class="col-md-4">
-              <div class="col-md-4">
-               <img target="blank" src="assets/img/logos/git.png" alt="angular" width="50">            </div>
-                <p>Git</p>
-              </div>  
+               <img target="blank" src="assets/img/logos/git.png" alt="angular" width="50">           
+               <p>Git</p>
+             </div>
+
+             <div class="col-md-4">
+                <img target="blank" src="assets/img/logos/ow.png" alt="angular" width="50">
+                <p>Optimal Workshop</p>
+              </div>
+             
+
+              
             </div>
       </div>
 
