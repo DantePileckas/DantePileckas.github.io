@@ -19,7 +19,9 @@ export class ProyectsComponent implements OnInit {
   goToUrlVeterinaria(){
     window.location.href='https://dantepileckas.github.io/citasReact/';
   }
-
+  goToUrlCotizador(){
+    window.location.href='https://dantepileckas.github.io/Cotizador/';
+  }
 
   ngOnInit(): void {
   }
