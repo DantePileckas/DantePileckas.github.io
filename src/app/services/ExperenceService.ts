@@ -6,6 +6,13 @@ export class ExperenceService{
 
 private experence:Experence[]=
 [
+    {
+        name:"Support and Development Analytics", 
+        institute:"Producteca",
+        description:"Soporte para usuarios sobre el uso y funcionamiento de la plataforma de Producteca",
+        img: "assets/img/producteca.png",
+        date:"Diciembre 2021 - Actualidad", 
+        },
 
 {
     name:"Web designer - freelance", 
@@ -14,7 +21,7 @@ private experence:Experence[]=
     img: "assets/img/el pueblito.png",
     date:"Febrero 2021 - Abril 2021", 
     },
-
+    
 ];
 
 
