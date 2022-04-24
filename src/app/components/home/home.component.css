@@ -121,13 +121,23 @@ h5, h1, h3{
     text-shadow: 2px 2px 4px #000000;    
 }
 
-h3{
+h1{
+    font-size: 250%;
     text-align: center;
 }
 
+h5{
+    font-size: 170%;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 170%;
+}
+
 img{
-    /* width: 100%; */
-    /* margin: auto; */
+    margin: auto;
     display: flex;
     border-radius: 100%;               
     box-shadow: 3px 3px 3px #90ddc4, -3px -3px 3px #fafafa;
