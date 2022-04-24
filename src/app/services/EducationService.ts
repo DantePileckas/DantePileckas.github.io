@@ -8,29 +8,29 @@ private education:Education[]=
 [
 
 {
-    name:"Analista de Sistemas", 
+    name:"Systems analyst", 
     institute:"ORT Argentina",
-    description:"Tecnicatura en Análisis en sistemas",
+    description:"Technician in Systems Analysis",
     img:"assets/img/ort.png",
-    date:"Agosto 2021 - Actualidad",
+    date:"August 2021 - Present",
     link:"" 
     },
 
     {
     name:"User Experience Analyst", 
     institute:"Educación IT",
-    description:"Planificada por 14 cursos",
+    description:"Planned for 14 courses",
     img:"assets/img/it.png",
-    date:"Marzo 2020 - Abril 2021",
+    date:"March 2020 - April 2021",
     link:"https://www.linkedin.com/in/dante-pileckas-4b503b210/detail/treasury/education:718119661/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAADVmAAkBzLPbVA6eWRC56ZyTBxnyaoc4WFA%2C1635453502516)&section=education%3A718119661&treasuryCount=4" 
     },
 
     {
-    name:"Secundario", 
+    name:"Secondary", 
     institute:"Instituto San Antonio de Padua",
-    description:"Bachiller con orientación a Ciencias Sociales y Humanidades (Prom. 9,67)",
+    description:"Bachelor with orientation to Social Sciences and Humanities (Prom. 9.67)",
     img:"assets/img/isap.jpg",
-    date:"Marzo 2016 - Diciembre 2020",
+    date:"March 2016 - December 2020",
     link:"" 
     },
 ];

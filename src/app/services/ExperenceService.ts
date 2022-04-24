@@ -9,17 +9,17 @@ private experence:Experence[]=
     {
         name:"Support and Development Analytics", 
         institute:"Producteca",
-        description:"Soporte para usuarios sobre el uso y funcionamiento de la plataforma de Producteca",
+        description:"Support for users on the use and operation of the Producteca platform",
         img: "assets/img/producteca.png",
-        date:"Diciembre 2021 - Actualidad", 
+        date:"December 2021 - Present ", 
         },
 
 {
     name:"Web designer - freelance", 
     institute:"El Pueblito, tu Tienda Saludable",
-    description:"Diseño y ejecución de una ecommerce con interacción intuitiva y amigable para el usuario. Desarrollada con técnicas de UX",
+    description:"Design and execution of an ecommerce with intuitive and user-friendly interaction. Developed with UX techniques",
     img: "assets/img/el pueblito.png",
-    date:"Febrero 2021 - Abril 2021", 
+    date:"February 2021 - April 2021", 
     },
     
 ];
