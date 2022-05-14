@@ -11,7 +11,7 @@ private experence:Experence[]=
         institute:"Producteca",
         description:"Support for users on the use and operation of the Producteca platform",
         img: "assets/img/producteca.png",
-        date:"December 2021 - Present ", 
+        date:"December 2021 - May 2022 ", 
         },
 
 {

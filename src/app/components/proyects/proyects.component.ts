@@ -12,13 +12,24 @@ export class ProyectsComponent implements OnInit {
 
   goToUrlSpoti(){
     window.location.href='https://dantepileckas-spotiapp.herokuapp.com/#/';
-}
+  }
+
+  goToUrlSpotiBehance(){
+    window.location.href='https://www.behance.net/gallery/118869851/SpotiApp/';
+  }
+
   goToUrlTienda(){
     window.location.href='http://elpueblitotienda.com.ar/';
-}
+  }
+
+  goToUrlTiendaBehance(){
+  window.location.href='https://www.behance.net/gallery/116674043/Ecommerce-El-pueblito-tu-tienda/';
+  }
+
   goToUrlVeterinaria(){
     window.location.href='https://dantepileckas.github.io/citasReact/';
   }
+
   goToUrlCotizador(){
     window.location.href='https://dantepileckas.github.io/Cotizador/';
   }
