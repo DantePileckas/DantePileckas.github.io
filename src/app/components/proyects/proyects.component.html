@@ -17,11 +17,36 @@
   
   <div class="row">
 
+
+ <!-- Portal de Notcias -->
+
+ <mat-card class="card mx-auto my-2">
+  <mat-card-header>
+    <mat-card-title>Daily News</mat-card-title>
+    </mat-card-header>
+
+      <img mat-card-image src="/assets/img/PortalDeNoticias.jpg">
+
+      <mat-card-content>                  
+        <p class="card-text">
+          Application that consumes the News API, to display the news of the day</p>
+        <small>Applied technologies</small><br>
+        <span class="badge bg-primary mx-1" >JavaScript</span>
+        <span class="badge bg-success  mx-1">React</span>
+        <span class="badge bg-success  mx-1">News API</span>
+      </mat-card-content>
+      <mat-card-actions class="actions">
+        <button type="button" (click)="goToUrlNoticias()" class="btn btn-link" target="blank">view repository</button>
+        <button type="button" (click)="goToUrlNoticiasBehance()" class="btn btn-link" target="blank">view process</button>
+      </mat-card-actions>
+     </mat-card>
+
+
     <!-- Consultorio Veterinario -->
 
     <mat-card class="card mx-auto my-2">
       <mat-card-header>
-        <mat-card-title>Consultorio Veterinario</mat-card-title>
+        <mat-card-title>Veterinary clinic</mat-card-title>
         </mat-card-header>
 
           <img mat-card-image src="/assets/img/ConsultorioVeterinaria.jpg">
@@ -77,8 +102,7 @@
 
                 <mat-card-content>                  
                   <p class="card-text">
-                    Application that consumes the spotify api, to discover new releases and artists
-                  </p>
+                    Application that consumes the spotify api, to discover new releases and artists</p>
                   <small>Applied technologies</small><br>
                   <span class="badge bg-primary mx-1" >TypeScript</span>
                   <span class="badge bg-success  mx-1">Angular</span>
