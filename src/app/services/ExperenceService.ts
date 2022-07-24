@@ -6,7 +6,16 @@ export class ExperenceService{
 
 private experence:Experence[]=
 [
+
     {
+        name:"Computer Science Teacher", 
+        institute:"Instituto San Antonio de Padua",
+        description:"I plan and teach classes to upper secondary level courses",
+        img: "assets/img/isap.jpg",
+        date:"July 2022 - present ", 
+        },
+    
+        {
         name:"Support and Development Analytics", 
         institute:"Producteca",
         description:"Support for users on the use and operation of the Producteca platform",
