@@ -7,6 +7,7 @@ export class ExperenceService{
 private experence:Experence[]=
 [
 
+    //Profesor de Computación
     {
         name:"Computer Science Teacher", 
         institute:"Instituto San Antonio de Padua",
@@ -15,7 +16,8 @@ private experence:Experence[]=
         date:"July 2022 - present ", 
         },
     
-        {
+    //Produ
+    {
         name:"Support and Development Analytics", 
         institute:"Producteca",
         description:"Support for users on the use and operation of the Producteca platform",
@@ -23,12 +25,13 @@ private experence:Experence[]=
         date:"December 2021 - May 2022 ", 
         },
 
-{
-    name:"Web designer - freelance", 
-    institute:"El Pueblito, tu Tienda Saludable",
-    description:"Design and execution of an ecommerce with intuitive and user-friendly interaction. Developed with UX techniques",
-    img: "assets/img/el pueblito.png",
-    date:"February 2021 - April 2021", 
+    //El Pueblito 
+    {
+        name:"Web designer - freelance", 
+        institute:"El Pueblito, tu Tienda Saludable",
+        description:"Design and execution of an ecommerce with intuitive and user-friendly interaction. Developed with UX techniques",
+        img: "assets/img/el pueblito.png",
+        date:"February 2021 - April 2021", 
     },
     
 ];

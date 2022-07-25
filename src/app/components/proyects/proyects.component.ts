@@ -42,6 +42,15 @@ export class ProyectsComponent implements OnInit {
     window.location.href='https://www.behance.net/gallery/143701117/React-NotiApp-Portal-de-Noticias';
   }
 
+  goToUrlIsap(){
+    window.location.href='https://dantepileckas.github.io/isapInformatica/#/home';
+  }
+
+  goToUrlIsapGit(){
+    window.location.href='https://github.com/DantePileckas/isapInformatica.git';
+  }
+
+
 
   ngOnInit(): void {
   }

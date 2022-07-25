@@ -7,7 +7,8 @@ export class EducationService{
 private education:Education[]=
 [
 
-{
+    //Ort
+    {
     name:"Systems analyst", 
     institute:"ORT Argentina",
     description:"Technician in Systems Analysis",
@@ -16,6 +17,7 @@ private education:Education[]=
     link:"" 
     },
 
+    //Educación IT
     {
     name:"User Experience Analyst", 
     institute:"Educación IT",
@@ -25,6 +27,7 @@ private education:Education[]=
     link:"https://www.linkedin.com/in/dante-pileckas-4b503b210/detail/treasury/education:718119661/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAADVmAAkBzLPbVA6eWRC56ZyTBxnyaoc4WFA%2C1635453502516)&section=education%3A718119661&treasuryCount=4" 
     },
 
+    //Estudios Secundarios
     {
     name:"Secondary", 
     institute:"Instituto San Antonio de Padua",

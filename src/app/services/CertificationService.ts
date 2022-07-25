@@ -14,6 +14,7 @@ private certification:Certification[]=
         link:"https://www.sololearn.com/Certificate/1092-21750305/jpg" 
         },
 
+        
     {
     name:"GIT: Desarrollo Colaborativo", 
     institute:"Educación IT",
