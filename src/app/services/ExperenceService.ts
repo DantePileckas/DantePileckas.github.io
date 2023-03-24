@@ -7,13 +7,23 @@ export class ExperenceService{
 private experence:Experence[]=
 [
 
+
+
+    //Implementador
+   {name:"Chatbot Implementer", 
+    institute:"Bleett",
+    description:"Construction of conversational flows and development of implementation diagrams",
+    img: "assets/img/bleett.jfif",
+    date:"March 2023 - present ",
+    },
+
     //Profesor de Computación
     {
         name:"Computer Science Teacher", 
         institute:"Instituto San Antonio de Padua",
         description:"I plan and teach classes to upper secondary level courses",
         img: "assets/img/isap.jpg",
-        date:"July 2022 - present ", 
+        date:"July 2022 - March 2023 ", 
         },
     
     //Produ
