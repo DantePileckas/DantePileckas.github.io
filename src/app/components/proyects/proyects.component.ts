@@ -50,9 +50,16 @@ export class ProyectsComponent implements OnInit {
     window.location.href='https://github.com/DantePileckas/isapInformatica.git';
   }
 
+ ngOnInit() {
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
 
-
-  ngOnInit(): void {
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }, 100);
   }
 
 }

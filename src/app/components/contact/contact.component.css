@@ -1,57 +1,103 @@
- .contact{
+/* contact.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+section {
+  min-height: 100vh;
+  padding: 120px 40px 80px;
   display: flex;
+  align-items: center;
   justify-content: center;
-} 
-
-.col-12:first-of-type{
-    margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
-.contact h1, .contact h2{
-    text-align: center;
-    font-weight: bolder;
-    color: #FFFFFF;  
-    text-shadow: 2px 2px 4px #000000;   
+.section-inner {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
 }
 
-.back{
-    background-color: #34495e;
-    opacity: 0.9;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
+/* ─── INTRO ─── */
+.contact-intro {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 52px;
+  font-weight: 300;
+  line-height: 1.9;
 }
 
-img:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+/* ─── GRID ─── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
 }
 
-p{
-    color: #FFFFFF;
+/* ─── TARJETA ─── */
+.contact-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-xs);
 }
 
-
-.contact-data{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-sm);
 }
 
- @media (max-width: 600px) {
-    .contact{
-        padding: 1rem 0 2rem;
-    }
-    .col-12:first-of-type{
-        margin-bottom: 1.5rem;
-    }
-    .contact h1{
-       font-size: 2em;
-    }
-    .contact h2{
-        font-size: 1.5em;
-    }
-} 
+.contact-icon {
+  font-size: 28px;
+}
+
+.contact-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-deep);
+  margin: 0;
+}
+
+.contact-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Línea de acento inferior (se agranda en hover) */
+.contact-accent {
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 6px;
+  transition: width 0.3s ease;
+}
+
+.contact-card:hover .contact-accent {
+  width: 60px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 600px) {
+  section {
+    padding: 100px 24px 60px;
+  }
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

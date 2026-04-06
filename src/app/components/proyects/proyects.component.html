@@ -1,168 +1,131 @@
-<div class="portfolio">
-<div class="container">
-  
-  <!-- Encabezado -->
-  <div class="row">
-    <div class="col-12 text-center">
-     <h1>
-     Portafolio
-     </h1>
-      <p>Projects developed for educational or leisure purposes through new technologies</p>
+<!-- proyects.component.html -->
+<section id="projects">
+  <div class="section-inner">
+
+    <p class="section-tag reveal">My work</p>
+    <h2 class="section-title reveal">Selected Projects</h2>
+
+    <div class="bento-grid">
+
+      <!-- Educational Portal — FEATURED (ocupa 2 columnas) -->
+      <div class="project-card featured reveal">
+        <div class="project-img">
+          <img src="/assets/img/foroIsap.jpg" alt="Educational Portal" />
+        </div>
+        <div class="project-body">
+          <h3>Educational Portal</h3>
+          <p>Educational forum designed for high school students. A full-stack platform for creating, sharing and discussing educational content.</p>
+          <div class="project-tags">
+            <span class="tag tag-ts">TypeScript</span>
+            <span class="tag tag-ang">Angular</span>
+            <span class="tag tag-bs">Bootstrap</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlIsap()">View page ↗</button>
+            <button class="project-btn secondary" (click)="goToUrlIsapGit()">Repository</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SpotiApp 
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="/assets/img/spotiApp.jpg" alt="SpotiApp" />
+        </div>
+        <div class="project-body">
+          <h3>SpotiApp</h3>
+          <p>Spotify API integration to discover new releases and artists with a polished interface.</p>
+          <div class="project-tags">
+            <span class="tag tag-ts">TypeScript</span>
+            <span class="tag tag-ang">Angular</span>
+            <span class="tag tag-api">Spotify API</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlSpoti()">View page ↗</button>
+            <button class="project-btn secondary" (click)="goToUrlSpotiBehance()">Process</button>
+          </div>
+        </div>
+      </div>-->
+
+      <!-- Daily News -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="/assets/img/PortalDeNoticias.jpg" alt="Daily News" />
+        </div>
+        <div class="project-body">
+          <h3>Daily News</h3>
+          <p>Application that consumes the News API to display the latest news of the day, organized by category.</p>
+          <div class="project-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-re">React</span>
+            <span class="tag tag-api">News API</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlNoticias()">Repository ↗</button>
+            <button class="project-btn secondary" (click)="goToUrlNoticiasBehance()">Process</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Veterinary -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="/assets/img/ConsultorioVeterinaria.jpg" alt="Veterinary Clinic" />
+        </div>
+        <div class="project-body">
+          <h3>Veterinary Clinic</h3>
+          <p>Patient manager for a veterinary office to carry out shift records and appointment management.</p>
+          <div class="project-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-re">React</span>
+            <span class="tag tag-bs">Bootstrap</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlVeterinaria()">View page ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car Quote -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="/assets/img/cotizador.jpg" alt="Car Quote" />
+        </div>
+        <div class="project-body">
+          <h3>Car Quote</h3>
+          <p>First React project — auto quote calculator by make, model and year with a dynamic UI.</p>
+          <div class="project-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-re">React</span>
+            <span class="tag tag-bs">Bootstrap</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlCotizador()">View page ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- El Pueblito — FEATURED 
+      <div class="project-card featured reveal">
+        <div class="project-img">
+          <img src="/assets/img/Pueblito.jpg" alt="El Pueblito" />
+        </div>
+        <div class="project-body">
+          <h3>El Pueblito — Healthy Store</h3>
+          <p>Ecommerce for a healthy store with complete UX research: benchmark, proto-personas, polls, usability testing and AI-driven design decisions.</p>
+          <div class="project-tags">
+            <span class="tag tag-wp">WordPress</span>
+            <span class="tag tag-bs">Benchmark</span>
+            <span class="tag tag-api">Usability Test</span>
+            <span class="tag tag-ts">AI</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-btn primary" (click)="goToUrlTienda()">View page ↗</button>
+            <button class="project-btn secondary" (click)="goToUrlTiendaBehance()">Process</button>
+          </div>
+        </div>
+      </div>-->
+
     </div>
   </div>
-  
-
-<br>
-  <!-- proyectos -->
-  
-  <div class="row">
-
-     <!-- Foro -->
-    <mat-card class="card mx-auto my-2">
-      <mat-card-header>
-        <mat-card-title>Educational Portal</mat-card-title>
-        </mat-card-header>
-    
-          <img mat-card-image src="/assets/img/foroIsap.jpg">
-    
-          <mat-card-content>                  
-            <p class="card-text">
-              Educational forum for high school students</p>
-            <small>Applied technologies</small><br>
-            <span class="badge bg-primary mx-1" >TypeScript</span>
-            <span class="badge bg-success  mx-1">Angular</span>
-            <span class="badge bg-success  mx-1">Boostrap</span>
-          </mat-card-content>
-          <mat-card-actions class="actions">
-            <button type="button" (click)="goToUrlIsap()" class="btn btn-link" target="blank">View page</button>
-            <button type="button" (click)="goToUrlIsapGit()" class="btn btn-link" target="blank">View repository</button>
-          </mat-card-actions>
-         </mat-card>
-
-
- <!-- Portal de Notcias -->
-
- <mat-card class="card mx-auto my-2">
-  <mat-card-header>
-    <mat-card-title>Daily News</mat-card-title>
-    </mat-card-header>
-
-      <img mat-card-image src="/assets/img/PortalDeNoticias.jpg">
-
-      <mat-card-content>                  
-        <p class="card-text">
-          Application that consumes the News API, to display the news of the day</p>
-        <small>Applied technologies</small><br>
-        <span class="badge bg-primary mx-1" >JavaScript</span>
-        <span class="badge bg-success  mx-1">React</span>
-        <span class="badge bg-success  mx-1">News API</span>
-      </mat-card-content>
-      <mat-card-actions class="actions">
-        <button type="button" (click)="goToUrlNoticias()" class="btn btn-link" target="blank">View repository</button>
-        <button type="button" (click)="goToUrlNoticiasBehance()" class="btn btn-link" target="blank">View process</button>
-      </mat-card-actions>
-     </mat-card>
-
-
-    <!-- Consultorio Veterinario -->
-
-    <mat-card class="card mx-auto my-2">
-      <mat-card-header>
-        <mat-card-title>Veterinary clinic</mat-card-title>
-        </mat-card-header>
-
-          <img mat-card-image src="/assets/img/ConsultorioVeterinaria.jpg">
-
-          <mat-card-content>                  
-            <p class="card-text">
-              Patient manager of a veterinary office to carry out shift records.</p>
-            <small>Applied technologies</small><br>
-            <span class="badge bg-primary mx-1" >JavaScript</span>
-            <span class="badge bg-success  mx-1">React</span>
-            <span class="badge bg-success  mx-1">Boostrap</span>
-          </mat-card-content>
-          <mat-card-actions class="actions">
-          <button type="button" (click)="goToUrlVeterinaria()" class="btn btn-link" target="blank">View page</button>
-<!--           <button type="button" (click)="goToUrlVeterinaria()" class="btn btn-link" target="blank">view process</button>
- -->          </mat-card-actions>
-         </mat-card>
-
-
-  <!-- Cotizador de Auto -->
-
-  <mat-card class="card mx-auto my-2">
-    <mat-card-header>
-      <mat-card-title>Car Quote</mat-card-title>
-      </mat-card-header>
-
-        <img mat-card-image src="/assets/img/cotizador.jpg">
-
-        <mat-card-content>                  
-          <p class="card-text">
-            First project done in React. Auto quote according to make, model and year</p>
-          <small>Applied technologies</small><br>
-          <span class="badge bg-primary mx-1" >JavaScript</span>
-          <span class="badge bg-success  mx-1">React</span>
-          <span class="badge bg-success  mx-1">Boostrap</span>
-        </mat-card-content>
-        <mat-card-actions class="actions">
-          <button type="button" (click)="goToUrlCotizador()" class="btn btn-link" target="blank">View page</button>
-<!--           <button type="button" (click)="goToUrlCotizador()" class="btn btn-link" target="blank">view process</button>
- -->    </mat-card-actions>
-       </mat-card>
-
-
-      <!-- SpotiApp -->
-
-     
-          <mat-card class="card mx-auto my-2">
-            <mat-card-header>
-              <mat-card-title>SpotiApp</mat-card-title>
-              </mat-card-header>
-
-                <img mat-card-image src="/assets/img/spotiApp.jpg">
-
-                <mat-card-content>                  
-                  <p class="card-text">
-                    Application that consumes the spotify api, to discover new releases and artists</p>
-                  <small>Applied technologies</small><br>
-                  <span class="badge bg-primary mx-1" >TypeScript</span>
-                  <span class="badge bg-success  mx-1">Angular</span>
-                  <span class="badge bg-success  mx-1">Boostrap</span>
-                </mat-card-content>
-                <mat-card-actions class="actions">
-                <button type="button" (click)="goToUrlSpoti()" class="btn btn-link" target="blank">View page</button>
-                <button type="button" (click)="goToUrlSpotiBehance()" class="btn btn-link" target="blank">View process</button>
-                </mat-card-actions>
-               </mat-card>
-
-
-
-        <!-- El Pueblito, tu tienda -->
-
-          <mat-card class="card mx-auto my-2">
-            <mat-card-header>
-              <mat-card-title>El Pueblito</mat-card-title>
-            </mat-card-header>
-            
-            <img mat-card-image src="/assets/img/Pueblito.jpg">
-
-            <mat-card-content>                 
-              <p class="card-text">Ecommerce of a healthy store, with user analysis and development in Wordpress</p>
-            <small>Applied techniques and tools</small><br>
-            <span class="badge bg-primary mx-1" >Wordpress</span>
-            <span class="badge bg-success  mx-1">Benchmark</span>
-            <span class="badge bg-success  mx-1">Polls</span>
-            <span class="badge bg-success  mx-1">proto-people</span>
-            <span class="badge bg-success  mx-1">AI</span>
-            <span class="badge bg-success  mx-1">Usability test</span>
-          </mat-card-content> 
-            <mat-card-actions class="actions">
-              <button type="button" (click)="goToUrlTienda()" class="btn btn-link" target="blank">View page</button>
-              <button type="button" (click)="goToUrlTiendaBehance()" class="btn btn-link" target="blank">View process</button>
-            </mat-card-actions>
-            </mat-card>
-
-    </div>
-    </div>
-    </div>
+</section>

@@ -1,35 +1,49 @@
-<div class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Dante Pileckas</h1>
-                <h2>Systems Analysis Student,</h2>    
-                <h2>UX Analyst.</h2>            
-        
-        </div>
-        </div>
-        <div class="row back"> 
-            <div class="col-md-4 contact-data">
-                <img (click)="Wpp()"  target="blank" src="assets/img/wpp.png" alt="Whatsapp" width="50">
-                <p>+54 11 3589-2418</p>
-            </div>
-            <div class="col-md-4 contact-data">
-                <img (click)="Git()"  target="blank" src="assets/img/github-sign.png" alt="Git" width="50">
-                <p>DantePileckas</p>
-            </div>
-            <div class="col-md-4 contact-data">
-                <img (click)="Linkedin()" target="blank" src="assets/img/linkedin.png" alt="linkedin" width="50">
-                <p>Dante Pileckas</p>
-            </div>
-            <br>
-            <div class="col-md-4 contact-data">
-                <img (click)="Behance()"  target="blank" src="assets/img/behance.png" alt="behance" width="50">
-                <p>Dante Pileckas</p>
-            </div>
-            <div class="col-md-4 contact-data">
-                <img src="assets/img/gmail.png"  width="50">
-                <p>pileckas33@gmail.com</p>
-            </div>
-        </div>
+<!-- contact.component.html -->
+<section id="contact">
+  <div class="section-inner">
+
+    <p class="section-tag reveal">Let's talk</p>
+    <h2 class="section-title reveal">Get in touch</h2>
+
+    <p class="contact-intro reveal">
+      I'm currently open to new opportunities and collaborations.<br>
+      Whether it's a project, a question or just a hello — my inbox is always open.
+    </p>
+
+    <div class="contact-grid reveal">
+
+      <!-- GitHub -->
+      <div class="contact-card" (click)="Git()">
+        <div class="contact-icon">🐙</div>
+        <h4>GitHub</h4>
+        <p>DantePileckas</p>
+        <div class="contact-accent" style="background: #333;"></div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-card" (click)="Linkedin()">
+        <div class="contact-icon">💼</div>
+        <h4>LinkedIn</h4>
+        <p>Dante Pileckas</p>
+        <div class="contact-accent" style="background: #0A66C2;"></div>
+      </div>
+
+      <!-- Behance -->
+      <div class="contact-card" (click)="Behance()">
+        <div class="contact-icon">🎨</div>
+        <h4>Behance</h4>
+        <p>Dante Pileckas</p>
+        <div class="contact-accent" style="background: #1769FF;"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h4>Email</h4>
+        <p>pileckas33@gmail.com</p>
+        <div class="contact-accent" style="background: var(--accent);"></div>
+      </div>
+
     </div>
-</div>
+  </div>
+</section>

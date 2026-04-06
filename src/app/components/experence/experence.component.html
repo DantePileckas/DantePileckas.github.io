@@ -1,253 +1,126 @@
-<div class="container">
-  <!-- estudios -->
-  <h1>Education</h1>
-  <div class="row">
-    <mat-card class="card mx-auto my-2"  *ngFor="let education of education ; let i=index">
-      <mat-card-header>
-        <mat-card-title>{{education.name}}</mat-card-title>
-        </mat-card-header>
-          <mat-card-content>                  
-            <p class="card-text">
-              <img [src]="education.img" alt="education.logo">  {{education.institute}}
-            </p>
-            <p class="card-text">
-            {{education.description}}
-            </p>
-            <p class="card-text">
-              <small class="text-muted">
-              {{education.date}}
-            </small>
-            </p>
-          </mat-card-content>
-          <!-- <mat-card-actions class="actions">
-          <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
-          </mat-card-actions> -->
-    </mat-card>
-  </div>
-  <br>
-  <br>
-  <!-- Certificaciones -->
-  <h1>Licenses and Certifications</h1>
-  <div class="row">
-    <!-- <div class="animated fadeIn fast"> -->
-    <mat-card class="card mx-auto my-2"  *ngFor="let certification of certification ; let i=index">
-      <mat-card-header>
-        <mat-card-title>{{certification.name}}</mat-card-title>
-        </mat-card-header>
-          <mat-card-content>                  
-            <p class="card-text">
-              <img [src]="certification.img" alt="certification.logo">{{certification.institute}}
-            </p>
-  
-            <p class="card-text">
-              <small class="text-muted">
-              {{certification.date}}
-            </small>
-            </p>
-          </mat-card-content>
-          <mat-card-actions class="actions">
-          <a [href]=certification.link target="blank">See credential</a>
-          </mat-card-actions>
-          </mat-card>
+<!-- experence.component.html -->
+<section id="experience">
+  <div class="section-inner">
 
-  </div>
-  <br>
-  <br>
-  <!-- Experiencias -->
-  <h1>Experiences</h1>
-  <div class="row">
-    <!-- <div class="animated fadeIn fast"> -->
-    <mat-card class="card mx-auto my-2"  *ngFor="let experence of experence ; let i=index">
-      <mat-card-header>
-        <mat-card-title>{{experence.name}}</mat-card-title>
-        </mat-card-header>
-          <mat-card-content>                  
-            <p class="card-text">
-            <img [src]="experence.img" alt="experence.logo">{{experence.institute}}
-            </p>
-            <p class="card-text">
-              {{experence.description}}
-            </p>
-            <p class="card-text">
-              <small class="text-muted">
-              {{experence.date}}
-            </small>
-            </p>
-          </mat-card-content>
-          <!-- <mat-card-actions class="actions">
-          <button type="button"  class="btn btn-link" target="blank">{{education.link}}</button>
-          </mat-card-actions> -->
-          </mat-card>
+    <!-- Encabezado -->
+    <p class="section-tag reveal">My background</p>
+    <h2 class="section-title reveal">Education &amp; Experience</h2>
 
-  </div>
-
-  <br>
-  <br>
-  <!-- skills tecnicos -->
-  <h1>Technical skills</h1>
-
-  <div class="space">
-    <div class="row">
-
-        <!-- Java -->
-        <div class="card text-white  mb-3" style="max-width: 18rem;">
-          <div class="header">Java</div>
-          <div class="card-body">
-            <div class="col-md-4">
-              <img target="blank" src="assets/img/logos/java.png" alt="java" width="50">
-              <p>Java v8</p>
-            </div>
+    <!-- ── EDUCACIÓN (datos del servicio, igual que antes) ── -->
+    <h3 class="block-title reveal">Education</h3>
+    <div class="exp-grid reveal">
+      <div class="exp-card" *ngFor="let item of education">
+        <div class="exp-card-header">
+          <div class="exp-logo">
+            <img [src]="item.img" [alt]="item.institute" />
+          </div>
+          <div>
+            <h3>{{ item.name }}</h3>
+            <span class="inst">{{ item.institute }}</span>
           </div>
         </div>
+        <p>{{ item.description }}</p>
+        <span class="exp-date">{{ item.date }}</span>
+      </div>
+    </div>
 
-
-        <!-- JavaScript frameworks and libraries -->
-       <div class="card text-white mb-3" style="max-width: 18rem;">
-         <div class="header">JavaScript Frameworks and libraries</div>
-          <div class="card-body">
-           
-            <div class="col-md-4">
-              <img  src="assets/img/logos/javas.png" alt="JavaScript" width="50">
-              <p>JavaScript</p>
-            </div>
-
-            <div class="col-md-4">
-                <img  src="assets/img/logos/angular.png" alt="angular" width="50">
-                <p>Angular</p>
-            </div>
-         
-            <div class="col-md-4">
-              <img src="assets/img/logos/typescript.png" alt="type" width="50">
-              <p>Typescript</p>
-            </div>
-          
-          <div class="col-md-4">
-            <img  src="assets/img/logos/react.png" alt="angular" width="50">
-            <p>React</p>
+    <!-- ── CERTIFICACIONES ── -->
+    <h3 class="block-title reveal">Licenses &amp; Certifications</h3>
+    <div class="exp-grid reveal">
+      <div class="exp-card" *ngFor="let cert of certification">
+        <div class="exp-card-header">
+          <div class="exp-logo sky">
+            <img [src]="cert.img" [alt]="cert.institute" />
           </div>
-          
+          <div>
+            <h3>{{ cert.name }}</h3>
+            <span class="inst">{{ cert.institute }}</span>
+          </div>
+        </div>
+        <span class="exp-date">{{ cert.date }}</span>
+        <a [href]="cert.link" target="_blank" class="exp-link">See credential →</a>
+      </div>
+    </div>
+
+    <!-- ── EXPERIENCIA ── -->
+    <h3 class="block-title reveal">Work Experience</h3>
+    <div class="exp-grid reveal">
+      <div class="exp-card" *ngFor="let exp of experence">
+        <div class="exp-card-header">
+          <div class="exp-logo peach">
+            <img [src]="exp.img" [alt]="exp.institute" />
+          </div>
+          <div>
+            <h3>{{ exp.name }}</h3>
+            <span class="inst">{{ exp.institute }}</span>
+          </div>
+        </div>
+        <p>{{ exp.description }}</p>
+        <span class="exp-date">{{ exp.date }}</span>
+      </div>
+    </div>
+
+    <!-- ── HABILIDADES TÉCNICAS ── -->
+    <h3 class="block-title reveal">Technical Skills</h3>
+    <div class="skills-grid reveal">
+
+      <div class="skill-card">
+        <div class="skill-cat">Conversational platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Botmaker</span>
+          <span class="skill-tag">Liveperson</span>
+          <span class="skill-tag">Blip</span>
+          <span class="skill-tag">DialogFlow</span>
+          <span class="skill-tag">Salesforce</span>
         </div>
       </div>
 
-        <!-- Diseño -->
-      <div class="card text-white mb-3" style="max-width: 18rem;">
-        <div class="header">Html - css</div>
-        <div class="card-body">
-           
-          <div class="col-md-4">
-              <img  src="assets/img/logos/html.png" alt="angular" width="50">
-              <p>Html</p>
-          </div> 
-          
-          <div class="col-md-4">
-            <img  src="assets/img/logos/css.png" alt="type" width="50">
-            <p>Css</p>
-          </div>
-
-          <div class="col-md-4">
-            <img  src="assets/img/logos/boostrap.png" alt="angular" width="50">
-            <p>Boostrap</p>
-          </div>
-      
+      <div class="skill-card">
+        <div class="skill-cat">Front-end</div>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">React</span>
         </div>
       </div>
 
-        <!-- Prototipo -->
-      <div class="card text-white  mb-3" style="max-width: 18rem;">
-        <div class="header">prototype</div>
-        <div class="card-body">
-          <div class="col-md-4">
-              <img target="blank" src="assets/img/logos/figma.png" alt="angular" width="50">
-              <p>Figma</p>
-          </div>
-         
-          <div class="col-md-4">
-            <img target="blank" src="assets/img/logos/invision.png" alt="angular" width="50">
-            <p>Invision</p>
-          </div>
-         
-          <div class="col-md-4">
-            <img target="blank" src="assets/img/logos/marvel.png" alt="angular" width="50">
-            <p>Marvel</p>
-          </div>
-
+      <div class="skill-card">
+        <div class="skill-cat">UX Design</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">InVision</span>
+          <span class="skill-tag">Marvel</span>
         </div>
       </div>
-              
-        <!-- Adobe -->
-      <div class="card text-white  mb-3" style="max-width: 18rem;">
-        <div class="header">Adobe</div>
-        <div class="card-body">
-          
-          <div class="col-md-4">
-            <img target="blank" src="assets/img/logos/ilustrator.png" alt="angular" width="50">
-            <p>Adobe Ilustrator</p>
-          </div>
 
-          <div class="col-md-4">
-           <img target="blank" src="assets/img/logos/photoshop.png" alt="angular" width="50">
-           <p>Adobe Photoshop</p>
-          </div>
-
-          <div class="col-md-4">
-           <img target="blank" src="assets/img/logos/xd.png" alt="angular" width="50">
-           <p>Adobe XD</p>
-          </div>
-        
+      <div class="skill-card">
+        <div class="skill-cat">Adobe</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">Photoshop</span>
         </div>
       </div>
-      
-        <!-- Research -->
-      <div class="card text-white  mb-3" style="max-width: 18rem;">
-        <div class="header">Research</div>
-        <div class="card-body">
-         
-          <div class="col-md-4">
-            <img target="blank" src="assets/img/logos/miro.png" alt="angular" width="50">
-            <p>Miro</p>
-           </div>
 
-           <div class="col-md-4">
-              <img target="blank" src="assets/img/logos/google_forms.jpg" alt="angular" width="50">   
-              <p>Google Forms</p>
-           </div>  
-
-          <div class="col-md-4">
-              <img target="blank" src="assets/img/logos/typefrom.png" alt="angular" width="50">     
-              <p>Typefrom</p>
-          </div>
-
-            </div>
+      <div class="skill-card">
+        <div class="skill-cat">Research</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Miro</span>
+          <span class="skill-tag">Typeform</span>
+          <span class="skill-tag">Optimal Workshop</span>
+          <span class="skill-tag">Google Workspace</span>
+        </div>
       </div>
 
-        <!-- Others -->
-      <div class="card text-white mb-3" style="max-width: 18rem;">
-        <div class="header">Others</div>
-          <div class="card-body">
-            
-            <div class="col-md-4">
-              <img target="blank" src="assets/img/logos/wordpress.jpg" alt="angular" width="50">
-              <p>Wordpress</p>
-            </div>
-            
-            <div class="col-md-4">
-               <img target="blank" src="assets/img/logos/git.png" alt="angular" width="50">           
-               <p>Git</p>
-             </div>
-
-             <div class="col-md-4">
-                <img target="blank" src="assets/img/logos/ow.png" alt="angular" width="50">
-                <p>Optimal Workshop</p>
-              </div>
-             
-
-              
-            </div>
+      <div class="skill-card">
+        <div class="skill-cat">Others</div>
+        <div class="skill-tags">
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Google Workspace</span>
+        </div>
       </div>
 
-    </div>      
-   
     </div>
   </div>
-
-
+</section>

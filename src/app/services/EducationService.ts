@@ -11,10 +11,10 @@ private education:Education[]=
     {
     name:"Systems analyst", 
     institute:"ORT Argentina",
-    description:"Technician in Systems Analysis",
+    description:"Technician in Systems Analysis (Prom: 8)",
     img:"assets/img/ort.png",
-    date:"August 2021 - Present",
-    link:"" 
+    date:"August 2021 - July 2025",
+    link:"https://www.linkedin.com/in/dante-pileckas-4b503b210/overlay/Education/738352163/treasury/?profileId=ACoAADVmAAkBzLPbVA6eWRC56ZyTBxnyaoc4WFA" 
     },
 
     //Educación IT

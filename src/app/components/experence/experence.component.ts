@@ -20,7 +20,22 @@ export class ExperenceComponent implements OnInit {
                private _certificationservice:CertificationService,
                private _experenceservice:ExperenceService) { }
 
-  ngOnInit(): void {
+//  ngOnInit(): void {
+//    this.education=this._educationservice.getEducation();
+//    this.certification=this._certificationservice.getCertification();
+//    this.experence=this._experenceservice.getExperence();
+//  }
+
+ngOnInit() {
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }, 100);
     this.education=this._educationservice.getEducation();
     this.certification=this._certificationservice.getCertification();
     this.experence=this._experenceservice.getExperence();

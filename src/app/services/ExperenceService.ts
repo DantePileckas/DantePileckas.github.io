@@ -7,14 +7,20 @@ export class ExperenceService{
 private experence:Experence[]=
 [
 
-
+    //Analista de Modernización
+   {name:"Modernization Analyst", 
+    institute:"Prosumia",
+    description:"Design, implement, and optimize AI-powered conversational solutions, managing the full product lifecycle and bridging the gap between technical and business teams.",
+    img: "assets/img/prosumia_logo.jfif",
+    date:"April 2026 - Present ",
+    },
 
     //Implementador
    {name:"Chatbot Implementer", 
     institute:"Bleett",
-    description:"Construction of conversational flows and development of implementation diagrams",
+    description:"Architect and deploy conversational flows, leading full-lifecycle projects, technical documentation, and cross-functional alignment to drive scalable AI solutions.",
     img: "assets/img/bleett.jfif",
-    date:"March 2023 - present ",
+    date:"March 2023 - April 2026 ",
     },
 
     //Profesor de Computación

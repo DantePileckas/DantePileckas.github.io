@@ -1,43 +1,58 @@
-<div class="about">
-<div class="container">
+<!-- about.component.html -->
+<section id="aboute" class="aboute">
+  <div class="section-inner">
 
-<div class="row">
-    <div class="col-md">
-        <h1>About me</h1>
-    </div>
-</div>
-
-<br>
-
-<div class="row">
-    <div class="col-md-4">
-        <img src="/assets/img/dos.JPG" class="img-thumbnail img-circle">
+    <!-- Imagen -->
+    <div class="about-image reveal">
+      <img src="/assets/img/dante_sobremi.jpg" alt="Dante Pileckas" />
     </div>
 
-<div class="col-md-8 bio">
-    <div class="row">
-            <h3>Pileckas, Dante G.</h3>
-            <p>
-                I'm Dante Pileckas, designer and Systems Analyst student. I am very passionate about learning about technology and designing products through it. I am currently studying to continue growing and consolidating knowledge. My goal is to be able to integrate computer skills, design and user experience using visual communication strategies.
-            </p>
-            <ul class="bio-details">
-                <li><strong>Birth:</strong> 12/06/2003</li>
-                <li><strong>Age:</strong> {{ '2003/06/12' | birthDay }} años</li>
-                <li><strong>City:</strong> Capital Federal, Buenos Aires</li>
-                <li><strong>Hobbies: </strong> 
-                    <div class="icon">
-                    <img src="/assets/img/teatro.png">
-                    <img src="/assets/img/planta.png">
-                    <img src="/assets/img/libro.png" >
-                    <img src="/assets/img/cocina.png">
-                </div>
-                </li>
-            </ul>
+    <!-- Bio -->
+    <div class="about-bio reveal">
+      <p class="section-tag">About me</p>
+      <h2 class="section-title">Pileckas,<br>Dante G.</h2>
+      <div class="divider"></div>
+
+      <p>
+      I'm Systems Analyst, Chatbot Architect & Educator. 🤖✨
+      </p>
+      <p>
+      I build digital experiences at the intersection of human behavior and emerging tech. My work blends pedagogical insight, conversational AI architecture, and product design to turn technical complexity into seamless, human-centric conversations. 🚀💡
+      </p>
+      <p>
+      My mission: Orchestrating visual communication and engineering to design products that don't just function—they resonate."
+      </p>
+
+      <ul class="about-details">
+        <li>
+          <div class="detail-icon">📅</div>
+          <div>
+            <strong>Birth</strong>
+            <!-- Usás tu pipe birthDay acá igual que antes -->
+            <span>{{ '2003/06/12' | birthDay }} years old &nbsp;·&nbsp; 12/06/2003</span>
+          </div>
+        </li>
+        <li>
+          <div class="detail-icon">📍</div>
+          <div>
+            <strong>City</strong>
+            <span>Capital Federal, Buenos Aires</span>
+          </div>
+        </li>
+        <li>
+          <div class="detail-icon">🎯</div>
+          <div>
+            <strong>Hobbies</strong>
+            <div class="hobbies">
+              <span class="hobby-tag">🎭 Theatre</span>
+              <span class="hobby-tag">🌿 Plants</span>
+              <span class="hobby-tag">📚 Reading</span>
+              <span class="hobby-tag">📸 Photography</span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-</div>
 
-
-
-
-</div>
-</div>
+  </div>
+</section>

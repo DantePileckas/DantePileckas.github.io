@@ -1,49 +1,7 @@
 <nav>
-    <div class="container">
-        <div class="row">
-            <div class="nav-bar">
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['home']">
-                    <a mat-icon-button id="home-icon" aria-label="Inicio">
-						<img  class="img1" src="/assets/img/home.png"></a>
-                    <p>
-                        <span class="d-none d-md-block">Home</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['aboute']">
-                    <a mat-icon-button id="about-icon" aria-label="Example icon button with a home icon">
-					<img class="img2" src="/assets/img/user.png">
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">About me</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['experence']">
-                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
-						<img class="img3" src="/assets/img/estrella.png">                    
-					</a>
-                    <p>
-                        <span class="d-none d-md-block">Experience</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['proyects']">
-                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
-						<img class="img4" src="/assets/img/maletin.png"> 
-                   </a>
-                    <p>
-                        <span class="d-none d-md-block">Projects</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['contact']">
-                    <a mat-icon-button id="contact-icon" aria-label="Example icon button with a home icon">
-						<img class="img5" src="/assets/img/email.png">
-					</a>
-                    <p>
-                        <span class="d-none d-md-block">Contact</span>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+  <a [routerLink]="['/home']"     routerLinkActive="active">Home</a>
+  <a [routerLink]="['/aboute']"   routerLinkActive="active">About</a>
+  <a [routerLink]="['/experence']" routerLinkActive="active">Experience</a>
+  <a [routerLink]="['/proyects']" routerLinkActive="active">Projects</a>
+  <a [routerLink]="['/contact']"  routerLinkActive="active">Contact</a>
 </nav>
-	
